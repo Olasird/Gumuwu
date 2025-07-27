@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema base de la aplicación para el modo claro -->
+    <style name="Base.Theme.Gumuwu" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Color primario para el modo claro -->
+        <item name="colorPrimary">@color/purple_500</item>
+    </style>
+
+    <style name="Theme.Gumuwu" parent="Base.Theme.Gumuwu" />
+    <style name="SectionTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <!-- Estilos para las listas horizontales -->
+    <style name="HorizontalRecyclerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">12dp</item>
+    </style>
+</resources>

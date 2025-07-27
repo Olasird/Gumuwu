@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- Grupo principal, siempre visible -->
+    <group android:id="@+id/group_main" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_movies"
+            android:icon="@drawable/ic_movie"
+            android:title="Películas" />
+        <item
+            android:id="@+id/nav_series"
+            android:icon="@drawable/ic_tv"
+            android:title="Series" />
+    </group>
+
+    <!-- Grupo para usuarios logueados -->
+    <group android:id="@+id/group_user" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favorite_filled"
+            android:title="Mis Favoritos" />
+        <item
+            android:id="@+id/nav_watchlist"
+            android:icon="@drawable/ic_bookmark_filled"
+            android:title="Mi Watchlist" />
+    </group>
+
+    <!-- Grupo para acciones de sesión -->
+    <group android:id="@+id/group_session" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_login"
+            android:title="Iniciar Sesión" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Cerrar Sesión" />
+        <item
+            android:id="@+id/nav_update"
+            android:icon="@drawable/ic_update"
+            android:title="Check for Updates" />
+    </group>
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Puedes encontrar el color original en res/values/colors.xml -->
+    <!-- Este es un ejemplo de un morado más oscuro -->
+    <color name="purple_500">#FF6200EE</color> <!-- Reemplaza con tu color primario si es diferente -->
+    <color name="purple_700">#FF3700B3</color>
+    <color name="icon_color">#FFFFFFFF</color>
+    <color name="icon_color2">#FFFFFFFF</color>
+    <color name="skeleton_color">#333333</color>
+
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContentFragment">
+
+    <!-- Contenedor del Esqueleto (inicialmente visible) -->
+    <include
+        android:id="@+id/skeleton_container"
+        layout="@layout/fragment_content_skeleton"
+        android:visibility="visible" />
+
+    <!-- Contenedor del Contenido Real (inicialmente oculto) -->
+    <LinearLayout
+        android:id="@+id/content_container_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable" xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:id="@+id/home_sections_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/new_releases_title"
+                        style="@style/SectionTitle"
+                        android:text="Estrenos" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/new_releases_recycler_view"
+                        style="@style/HorizontalRecyclerView" />
+
+                    <TextView
+                        android:id="@+id/trending_title"
+                        style="@style/SectionTitle"
+                        android:text="Populares" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/trending_recycler_view"
+                        style="@style/HorizontalRecyclerView" />
+
+                    <TextView
+                        android:id="@+id/history_title"
+                        style="@style/SectionTitle"
+                        android:text="Seguir Viendo" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/history_recycler_view"
+                        style="@style/HorizontalRecyclerView" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/main_grid_title"
+                    style="@style/SectionTitle"
+                    android:text="Catálogo Completo" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/content_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:clipToPadding="false"
+                    android:padding="2dp"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</FrameLayout>

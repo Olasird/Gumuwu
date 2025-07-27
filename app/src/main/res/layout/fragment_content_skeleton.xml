@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Esqueleto para la fila de Estrenos -->
+    <View
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/skeleton_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:clipToPadding="false">
+        <include layout="@layout/skeleton_card_horizontal" />
+        <include layout="@layout/skeleton_card_horizontal" />
+        <include layout="@layout/skeleton_card_horizontal" />
+    </LinearLayout>
+
+    <!-- Repetimos para Populares -->
+    <View
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/skeleton_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:clipToPadding="false">
+        <include layout="@layout/skeleton_card_horizontal" />
+        <include layout="@layout/skeleton_card_horizontal" />
+        <include layout="@layout/skeleton_card_horizontal" />
+    </LinearLayout>
+
+    <!-- Repetimos para Seguir Viendo -->
+    <View
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/skeleton_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:clipToPadding="false">
+        <include layout="@layout/skeleton_card_horizontal" />
+        <include layout="@layout/skeleton_card_horizontal" />
+        <include layout="@layout/skeleton_card_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>
