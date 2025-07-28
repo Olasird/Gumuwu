@@ -9,7 +9,7 @@ object HistoryManager {
     private const val PREFS_NAME = "HistoryPrefs"
     private const val HISTORY_KEY = "view_history"
     private const val SESSION_KEY = "current_session" // Clave para el marcador temporal
-    private const val VIEWING_THRESHOLD_MS = 20000L // 2 minutos
+    private const val VIEWING_THRESHOLD_MS = 180000L // 2 minutos
 
     // Guarda el inicio de una sesión de visionado
     fun startWatching(context: Context, contentId: String) {
